@@ -1,0 +1,124 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+    font-size: 18px;
+}
+.main{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+    background-color: hsl(185, 75%, 39%);
+
+    z-index: 0;
+
+    background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    /* background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);  */
+
+}
+
+.card{
+        position: relative;
+        width: 85%;
+        max-width: 350px;
+        height: 370px;
+
+        margin: auto;
+        border-radius: 10px;
+
+        background-color: whitesmoke;
+}
+.card-top{
+    height: 78%;
+}
+
+.card-img-pattern{
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    transform: translateY(-38%);
+}
+
+.card-img-profile{
+    width: 90px;
+    border-radius: 60px;
+    border: 5px solid white;
+}
+
+.card-name{
+
+    margin-top: 19px;
+    margin-bottom: 10px;
+
+    color:  hsl(229, 23%, 23%);
+
+    font-size: 1.2em;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+
+.card-age{
+    margin-left: 4.6px;
+    color: hsl(227, 10%, 46%);
+    font-size: 16.5px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight:400;
+
+}
+.card-city{
+    color:  hsl(227, 10%, 46%);
+    font-size: 14px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+.card-stat{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 22%;
+    padding: 0 48px;
+    border-top: 2px #ececec solid;
+}
+
+.card-data{
+    text-align: center;
+}
+
+.card-data h4{
+    color: hsl(229, 23%, 23%);
+    font-size: 1.04em;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+
+.card-data h6{
+    margin-top:5.5px;
+    
+    color: hsl(227, 10%, 46%);
+
+    font-size: 9.8px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
